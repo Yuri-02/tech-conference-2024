@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tech Conference 2024</title>
+
+</head>
+<div class="container">
+    <header class="header-class">
+        <nav>
+            <img class="logo" src="img/Logo_tech_conference-sem-ano.png" alt="tech-logo">
+            <ul class="navbar-items">
+                <li><a href="#about-the-event"> sobre o evento </a></li>
+                <li><a href="#register"> cadastro </a></li>
+                <li><a href="#contato"> contato </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <div class="title-subtitle">
+                <h1 class="header-title">Cadastro para o <br> Tech Conference 2024</h1>
+                <strong class="header-subtitle"> Partcipe do maior evento de tecnologia do país </strong>
+            </div>
+        </section>    
+    
+    <div id="about-the-event">
+        <h2>A Tech Conference, maior e principal conferência para o mercado tecnológico da América Latina, completa 22 anos de sucesso em 2024.</h2>
+        <p>Comemorando 20 anos presente no mercado, a Tech Conference está atenta às mudanças sem precedentes do mercado tecnológico e às transformações que vivemos em ritmo frenético.</p>
+
+        <p>A Tech Conference se adaptou aos novos desafios e responsabilidades, promoveu mudanças importantes, trouxe inovações, novos conteúdos, mais palestrantes e novidades na área de workshops. E está empenhada em trazer o que há de mais moderno e inovador para o Brasil.</p>
+            
+        <p>Tudo isso garante à Tech Conference uma posição de destaque no calendário de eventos mundiais voltados para ao setor tecnológico, colocando-a como o principal ponto de encontro do ecossistema científico.</p>
+            
+        <p>Além de ser a maior plataforma de conteúdo para este mercado com informações e muito conteúdo via TechLab. </p>
+            
+        <p>Com tantos anos de experiência, queremos nos aprofundar, desafiando os paradigmas, questionando tendências e repensando modelos, junto aos departamentos tecnológicos e empresas presentes na Tech Conference, e contando com o conhecimento e expertise das mais de 100 marcas nacionais e internacionais que demonstram seus produtos, serviços e tecnologias em uma área de 1.000 m2.</p>
+    
+        <div class="workshops">
+            <h3> Programação do evento </h3>
+            <h4> Palestras e Stands</h4>
+            <p> Durante todo o sábado e domingo das 9h às 18h.</p>
+            <ul> 
+                <h4> Workshops</h4>
+                <li> <b> 28/09 (Manhã) - </b>Ciência, tecnologia e inovação da UFF </li>
+                <li> <b> 28/09 (Tarde) - </b>Jovem programador 2024  </li>
+                <li> <b> 29/09 - </b>Sociedade brasileira de computação</li>
+            </ul>
+        </div>
+    </div>    
+
+    <form id="register">
+        <div class="data-to-fill">
+        <fieldset>
+            <div class="caption-title">
+                Faça seu cadastro
+            </div>
+
+            <label for="event-title"> Nome completo <span>(mínimo 8 caracteres)</span></label>
+            <input class="event-title-class" id="event-title" type="text" name="" placeholder="Digite o título do seu evento" minlength="8" required />
+        
+            <label for="event-link"> E-mail <span>(comece com https://)</span></label>
+            <input class="link-event-class" id="event-link" type="text" name="" placeholder="Digite o link do evento" required/>
+            
+            <label for="phone"> Telefone para contato <span> (somente números) </span></label>
+            <input class="phone-input" id="phone" type="tel" pattern="[0-9]{2}-[0-9]{5}[0-9]{4}" placeholder="ddd+telefone"  required/>
+            
+            <p> Selecione os Workshops que deseja participar  </p>
+
+            <div class="checkbox">
+                <input class="checkbox-uff" type="checkbox" name="" id="uff"/>
+                <label for="uff" >Ciência, tecnologia e inovação da UFF</label>
+
+                <input class="checkbox-jovem-programador" type="checkbox" name="" id="jovem-programador"/>
+                <label for="jovem-programador" >Jovem programador 2024</label>
+
+                <input class="checkbox-sbc" type="checkbox" name="" id="sbc"/>
+                <label for="sbc" >Sociedade brasileira de computação</label>
+            </div> 
+            
+            <div class="newsletter-option">
+                Deseja receber nossa newsletter por e-mail?
+            </div>
+            <div class="radio-buttons">
+                <input class="radio-bt-newsletter-yes" type="radio" name="" id="newsletter-yes" required>
+                <label for="newsletter-yes">Sim</label>
+
+                <input class="radio-bt-newsletter-no" type="radio" name="" id="newsletter-no">
+                <label for="newsletter-no"> Não </label>
+            </div>
+        </fieldset>
+
+    </div>
+        <footer>
+            <button type="submit"> Enviar </button>
+        </footer>
+
+    </form>
+    
+    </main>
+</div>
+</body>
+</html>
