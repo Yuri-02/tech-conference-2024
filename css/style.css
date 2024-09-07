@@ -16,17 +16,18 @@ nav{
     align-items: center;
 }
 .navbar-items li a{
-    color: rgb(206, 153, 241);
+    color: white;
     text-decoration: none;
     font-size: 18px;
     padding-right: 25px;
     padding-left: 16px;
     text-transform: uppercase;
     font-weight: bold;
+    transition: 0.6s;
 }
 
 .navbar-items li a:hover{
-    color: rgb(171, 74, 235);
+    color: #c4b5fd;
 }
 
 .logo{
@@ -34,23 +35,28 @@ nav{
     align-self: center;
     padding: 4px 8px;
 }
+
+
 .header-title{
     font-family:"Kanit";
-    background-image: linear-gradient(to right, rgb(253, 233, 50), rgb(235, 199, 102),rgb(243, 232, 129));
+    background-color: white;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 56px;
     font-weight: bolder;
+    position: relative;
+    inset: 0;
+
 }
 .header-subtitle{
     font-family: "kanit";
-    background-image: linear-gradient(to right, rgb(205, 160, 241), rgb(239, 212, 252),rgb(255, 255, 255));
-    background-clip: text;
+    background-color: #1e1b4b;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 28px;
 }
+
 
 
 
@@ -70,17 +76,13 @@ nav{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 97%;
+    opacity: 79%;
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     transition: 1s;
-}
-
-.banner:hover::before{
-    opacity: 80%;
 }
 
 .title-subtitle{
@@ -92,15 +94,42 @@ nav{
     position: relative;
 }
 
-#about-the-event h2{
-    display:grid;
-    background-image: linear-gradient(to right, rgb(0, 55, 128), rgb(43, 99, 172));
-    color: white;
+#about-the-event{
+    background-color: #e5e5e5;
+}
+
+.card{
     display: flex;
-    margin: 50px;
-    align-items: flex-start;
-    padding: 12px 0px 12px 24px;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1920px;
+    min-width: 320px;
+    height: 100%;
+    
+}
+
+#about-the-event h2{
+    
+    align-self: center;
+    max-width: 560px;
+    min-width: 200px;
+    height: 100%;
+    max-height: auto;
+    min-height: 100px;
+    
+    background-image: linear-gradient(to right, #075985, #0284c7);
+    color: white;
+    padding: 12px;
+    margin: 24px;
     border-radius: 8px;
+}
+
+#img-Tech{
+    border-radius: 8px;
+    max-width: 840px;
+    min-width: 200px;
+    margin: 24px;
+    aspect-ratio: auto;
 }
 
 #about-the-event p {
@@ -108,5 +137,125 @@ nav{
     padding: 16px 32px 16px; 
 }
 
+.workshops{
+    position: relative ;
+    color: white;
+    padding: 16px 32px;
+}
+
+.workshops::before{
+    content: '';
+    background-color: rgb(17, 27, 61);
+    background-image: url(../img/banner\ tech\ conference\ 2.jpg);
+    background-size: cover;
+    
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: 1s;
+}
+
+.workshops:hover::before{
+    opacity: 88%;
+}
+
+.workshop-text h3{
+    color: white;
+    font-size: 26px;
+    padding-bottom: 12px;
+    position: relative;
+}
+
+.workshop-text h4{
+    color: #c4b5fd;
+    font-size: 20px;
+    position: relative;
+}
+
+.workshop-text p{
+    color: white;
+    font-size: 17px;
+    padding-bottom: 12px;
+    padding-top: 8px;
+    position: relative;
+}
+
+.workshop-text li{
+    font-size: 17px;
+    list-style-type: none;
+    padding-top: 8px;
+    position: relative;
+}
+
+.data-to-fill{
+    background-color: #e5e5e5;
+    padding: 16px 32px 16px; 
+    margin: 8px;
+}
+
+
+.caption-title{
+    font-size: 26px;
+}
+
+.register-label {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-label label{
+    font-size: 16px;
+    padding: 6px 0px;
+
+}
+
+.register-label span{
+    font-size: 12px;
+}
+
+.register-label input{
+    border-radius: 5px;
+    width: 380px;
+}
+
+.data-to-fill p{
+    font-size: 16px;
+    padding: 8px 0px;
+   
+}
+
+
+.checkbox{
+    padding-bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.checkbox label{
+    padding-right: 56px;
+    padding-left: 8px;
+}
+.radio-buttons{
+    padding-bottom: 24px;
+}
+.radio-buttons label{
+    padding-right: 32px;
+}
+
+.button{
+    width: 80px;
+    height: 40px;
+    background-color: #10b981;
+    color: white;
+    border-radius: 8px;
+}
 
 
